@@ -5,7 +5,7 @@ The basic logic of this method is that as the most abbreviation terms are capita
 ```Python
 myabb=re.findall(r"\b[A-Z]{2,}\b", mytext)
 ```
-Also, the basic information of the abbreviation is important, otherwise it's hard to figure out what it is. Since most people would write abbreviation in the bracket with its full words ahead, the information can be find if we search "(abbreviation)" and its sentence.
+Also, the basic information of the abbreviation is important, otherwise it's hard to figure out what it is. Since most people would write abbreviation in the bracket with its full words ahead, the information can be found if we search "(abbreviation)" and its sentence.
 ```Python
 sent_find=re.findall(r'.*?\('+i+'\)', mytext)
 ```
